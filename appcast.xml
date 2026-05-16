@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     version="2.0">
+    <channel>
+        <title>Crumb</title>
+        <link>https://rogerdf30.github.io/crumb-updates/appcast.xml</link>
+        <description>Auto-update feed for Crumb — the floating sticky notes app.</description>
+        <language>en</language>
+        <!-- Releases are added below as <item> entries by generate_appcast.
+             The first release will appear here when version 2.0 ships. -->
+    </channel>
+</rss>
