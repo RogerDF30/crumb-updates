@@ -1,8 +1,8 @@
 # Crumb update feed
 
 This repo hosts the [Sparkle](https://sparkle-project.org) auto-update feed
-for [Crumb](https://companystore.gumroad.com), a floating sticky-notes app
-for macOS.
+for [Crumb](https://rogerio412.gumroad.com/l/crumb), a floating sticky-notes
+app for macOS.
 
 - **Feed URL**: <https://rogerdf30.github.io/crumb-updates/appcast.xml>
 - **Landing page**: <https://rogerdf30.github.io/crumb-updates/>
