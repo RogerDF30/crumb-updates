@@ -2,23 +2,221 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Crumb — Updates</title>
+<title>Crumb — Drop a thought. Keep working.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Translucent floating sticky notes for macOS. One keystroke away, on any screen, in any app.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Crumb — Drop a thought. Keep working.">
+<meta property="og:description" content="Translucent floating sticky notes for anything that doesn't deserve its own app.">
+<meta property="og:image" content="https://rogerdf30.github.io/crumb-updates/screenshots/01-cover.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rogerdf30.github.io/crumb-updates/">
+
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-         max-width: 560px; margin: 64px auto; padding: 0 24px;
-         color: #2a2a2a; line-height: 1.5; }
-  h1   { font-size: 28px; margin: 0 0 8px; }
-  p    { color: #555; }
-  code { background: #f4f1ea; padding: 2px 6px; border-radius: 4px;
-         font-size: 13px; }
-  a    { color: #9a6f3a; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: #0a0a0a;
+    color: #f5f1eb;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  /* Top nav — minimal */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 14px 32px;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(10,10,10,0.6);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    z-index: 10;
+    font-size: 13px;
+  }
+  nav .brand {
+    font-weight: 600; letter-spacing: -0.01em;
+    color: #f5f1eb; text-decoration: none;
+  }
+  nav .brand .bread { margin-right: 6px; }
+  nav a { color: #b8b1a3; text-decoration: none; margin-left: 18px; }
+  nav a:hover { color: #f5f1eb; }
+  nav .cta {
+    color: #0a0a0a; background: #f5f1eb;
+    padding: 8px 16px; border-radius: 999px; font-weight: 600;
+  }
+  nav .cta:hover { background: #fff; }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 96px 24px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .hero img {
+    width: 100%; height: auto;
+    border-radius: 12px;
+    margin-top: 8px;
+  }
+  .hero .cta-row {
+    display: flex; justify-content: center; gap: 12px;
+    margin: 32px 0 8px;
+    flex-wrap: wrap;
+  }
+  .btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform 0.15s, opacity 0.15s;
+  }
+  .btn-primary { background: #f5f1eb; color: #0a0a0a; }
+  .btn-secondary { background: transparent; color: #f5f1eb; border: 1px solid #444; }
+  .btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-1px);
+  }
+  .btn-secondary:hover { border-color: #888; }
+  .hero .meta {
+    color: #767169; font-size: 13px; margin: 8px 0 0;
+  }
+
+  /* Feature image stack */
+  section.feature {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 24px;
+  }
+  section.feature img {
+    width: 100%; height: auto;
+    border-radius: 12px;
+    display: block;
+  }
+
+  /* Footer */
+  footer {
+    max-width: 720px;
+    margin: 64px auto 0;
+    padding: 48px 24px 64px;
+    text-align: center;
+    color: #767169;
+    font-size: 13px;
+    line-height: 1.7;
+    border-top: 1px solid #1c1c1c;
+  }
+  footer a { color: #b8b1a3; text-decoration: none; }
+  footer a:hover { color: #f5f1eb; }
+  footer .links { margin: 16px 0 24px; }
+  footer .links a { margin: 0 12px; }
+  footer .made { font-size: 12px; opacity: 0.6; }
+
+  @media (max-width: 600px) {
+    nav { padding: 12px 16px; }
+    nav a:not(.cta) { display: none; }
+    .hero { padding-top: 80px; }
+    .btn-primary, .btn-secondary { font-size: 14px; padding: 12px 22px; }
+  }
 </style>
 </head>
 <body>
-<h1>🍞 Crumb — Updates</h1>
-<p>This page hosts the auto-update feed for Crumb, the floating sticky-notes app for macOS.</p>
-<p>If you have Crumb installed, updates check automatically — you don't need to do anything here. To get Crumb in the first place, visit the <a href="https://rogerio412.gumroad.com/l/crumb">Gumroad page</a>.</p>
-<p>The feed itself lives at <code>/appcast.xml</code>; DMGs are attached to <a href="https://github.com/RogerDF30/crumb-updates/releases">GitHub Releases</a>.</p>
+
+<nav>
+  <a href="/" class="brand"><span class="bread">🍞</span>Crumb</a>
+  <div>
+    <a href="https://github.com/RogerDF30/crumb-updates/releases">Releases</a>
+    <a href="https://github.com/RogerDF30/crumb-updates">GitHub</a>
+    <a class="cta" href="https://rogerio412.gumroad.com/l/crumb">Download</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="screenshots/01-cover.jpg"
+       alt="Five colorful Crumb sticky notes floating over a dark desktop, with the headline: Drop a thought. Keep working.">
+  <div class="cta-row">
+    <a class="btn-primary" href="https://rogerio412.gumroad.com/l/crumb">
+      Download on Gumroad — Free
+    </a>
+    <a class="btn-secondary" href="https://github.com/RogerDF30/crumb-updates/releases/latest">
+      Or grab the DMG on GitHub
+    </a>
+  </div>
+  <p class="meta">macOS 13+ • Apple Silicon • signed + notarized • auto-updates</p>
+</header>
+
+<section class="feature">
+  <img src="screenshots/02-pin-once.jpg"
+       loading="lazy"
+       alt="Crumb pinned above multiple apps showcasing the floating-everywhere behavior.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/03-switch-apps.jpg"
+       loading="lazy"
+       alt="A Crumb visible while switching between apps — staying above the active window.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/04-six-colors-dark.jpg"
+       loading="lazy"
+       alt="Six pre-designed colors stacked, showing the full Crumb palette in dark mode.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/05-two-moods-light.jpg"
+       loading="lazy"
+       alt="The same Crumb palette in light mode — same six themes, different mood.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/06-color-picker.jpg"
+       loading="lazy"
+       alt="The Crumb color picker popover — six swatches for amber, rose, sage, sky, lavender, stone.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/07-opacity-100.jpg"
+       loading="lazy"
+       alt="A Crumb at 100% opacity — fully visible, ready to read at a glance.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/08-opacity-45.jpg"
+       loading="lazy"
+       alt="The same Crumb at 45% opacity — translucent, fading into the background.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/09-library.jpg"
+       loading="lazy"
+       alt="The Crumb Library window — every live and archived Crumb in one searchable list.">
+</section>
+
+<section class="feature">
+  <img src="screenshots/10-preferences.jpg"
+       loading="lazy"
+       alt="Crumb Preferences — global hotkey recorder and new-crumb size options.">
+</section>
+
+<footer>
+  <div>
+    <strong style="color:#f5f1eb;">Drop a thought. Keep working.</strong>
+  </div>
+  <div class="links">
+    <a href="https://rogerio412.gumroad.com/l/crumb">Download</a>
+    <a href="https://github.com/RogerDF30/crumb-updates/releases">Releases</a>
+    <a href="https://github.com/RogerDF30/crumb-updates">GitHub</a>
+    <a href="appcast.xml">Update feed</a>
+  </div>
+  <div class="made">
+    Built with care by <a href="https://companystore.io">CompanyStore.IO</a>.
+    Auto-update powered by Sparkle.
+  </div>
+</footer>
+
 </body>
 </html>
