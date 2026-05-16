@@ -13,6 +13,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rogerdf30.github.io/crumb-updates/">
 
+<!-- Favicon + iOS / macOS home-screen icon -->
+<link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="256x256" href="logo/crumb-icon.png">
+<link rel="apple-touch-icon" sizes="512x512" href="logo/crumb-icon-512.png">
+
 <style>
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -40,8 +45,9 @@
   nav .brand {
     font-weight: 600; letter-spacing: -0.01em;
     color: #f5f1eb; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
   }
-  nav .brand .bread { margin-right: 6px; }
+  nav .brand img { width: 22px; height: 22px; border-radius: 5px; display: block; }
   nav a { color: #b8b1a3; text-decoration: none; margin-left: 18px; }
   nav a:hover { color: #f5f1eb; }
   nav .cta {
@@ -126,7 +132,7 @@
 <body>
 
 <nav>
-  <a href="/" class="brand"><span class="bread">🍞</span>Crumb</a>
+  <a href="/" class="brand"><img src="logo/crumb-icon.png" alt="">Crumb</a>
   <div>
     <a href="https://github.com/RogerDF30/crumb-updates/releases">Releases</a>
     <a href="https://github.com/RogerDF30/crumb-updates">GitHub</a>
@@ -203,6 +209,10 @@
 </section>
 
 <footer>
+  <div style="margin-bottom: 12px;">
+    <img src="logo/crumb-icon.png" alt="Crumb"
+         style="width:48px; height:48px; border-radius:11px;">
+  </div>
   <div>
     <strong style="color:#f5f1eb;">Drop a thought. Keep working.</strong>
   </div>

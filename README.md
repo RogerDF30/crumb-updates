@@ -1,4 +1,14 @@
-# Crumb update feed
+<p align="center">
+  <img src="logo/crumb-icon.png" width="128" alt="Crumb logo">
+</p>
+
+<h1 align="center">Crumb — update feed</h1>
+
+<p align="center">
+  <em>Drop a thought. Keep working.</em>
+</p>
+
+---
 
 This repo hosts the [Sparkle](https://sparkle-project.org) auto-update feed
 for [Crumb](https://rogerio412.gumroad.com/l/crumb), a floating sticky-notes
