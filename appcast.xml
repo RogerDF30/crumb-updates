@@ -8,6 +8,16 @@
         <!-- Releases are added below as <item> entries by generate_appcast.
              The first release will appear here when version 2.0 ships. -->
         <item>
+            <title>2.1.7</title>
+            <pubDate>Sat, 23 May 2026 16:48:42 +0530</pubDate>
+            <link>https://rogerdf30.github.io/crumb-updates/</link>
+            <sparkle:version>217</sparkle:version>
+            <sparkle:shortVersionString>2.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/RogerDF30/crumb-updates/releases/download/v2.1.7/Crumb-2.1.7.dmg" length="3446243" type="application/octet-stream" sparkle:edSignature="EN3zkreNhJMxrjrcW5AMbOdeBkJs+hF1tPsOj3Slf/oDra0CecLKSNrJ4IoCDp3Lc1KZYCFb6qXVJR7cEmW7Dg=="/>
+        </item>
+        <item>
             <title>2.1.6</title>
             <pubDate>Sat, 23 May 2026 16:34:07 +0530</pubDate>
             <link>https://rogerdf30.github.io/crumb-updates/</link>
@@ -26,16 +36,6 @@
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/RogerDF30/crumb-updates/releases/download/v2.1.5/Crumb-2.1.5.dmg" length="3443457" type="application/octet-stream" sparkle:edSignature="jfmyfefHxipzj093i6yfT6t56vWR10lam4zTn2RJEjVsf5gMmqvkQOESgjT8/+s2xjMOws/lW/PagHLMIIzACg=="/>
-        </item>
-        <item>
-            <title>2.1.4</title>
-            <pubDate>Sat, 23 May 2026 16:16:20 +0530</pubDate>
-            <link>https://rogerdf30.github.io/crumb-updates/</link>
-            <sparkle:version>214</sparkle:version>
-            <sparkle:shortVersionString>2.1.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/RogerDF30/crumb-updates/releases/download/v2.1.4/Crumb-2.1.4.dmg" length="3443770" type="application/octet-stream" sparkle:edSignature="wKexSevFK3XfAAQyvFRSccDamnVILdjiLiz+scw4Q/jEH4DQUcrgKV1XuDeVHXc1G1kJM8pvgivJBfE74zIMAw=="/>
         </item>
     </channel>
 </rss>
